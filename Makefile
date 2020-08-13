@@ -20,6 +20,14 @@ test:
 	#python -m pytest -vv --cov=myrepolib tests/*.py
 	#python -m pytest --nbval notebook.ipynb
 
+validate-circleci:
+	# requires circleci CLI: https://circleci.com/docs/2.0/local-cli/processing-a-config
+	circleci config process .circleci/config.yml
+
+run-circleci-local:
+	# requires circleci CLI: https://circleci.com/docs/2.0/local-cli/running-a-job
+	circleci local excecute
+	
 lint:
 	# See local hadolint install instructions:   https://github.com/hadolint/hadolint
 	# This is linter for Dockerfiles
