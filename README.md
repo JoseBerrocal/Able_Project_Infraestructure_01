@@ -1,4 +1,5 @@
 [![CircleCI](https://circleci.com/gh/JoseBerrocal/Able_Project_Infraestructure_01.svg?style=svg)](https://circleci.com/gh/JoseBerrocal/Able_Project_Infraestructure_01)
+[![WorkFlow Actions Status](https://github.com/JoseBerrocal/Able_Project_Infraestructure_01/workflows/repo-workflow/badge.svg)](https://github.com/JoseBerrocal/Able_Project_Infraestructure_01/actions)
 
 # Able_Project_Infraestructure_01
 Prepare for the interview testing cloudformation circleci and github jobs
