@@ -31,6 +31,18 @@ pipeline {
             }
         }
 
+       stage('Deploy Jump Server') {
 
+           when { anyOf {
+               branch 'jump' 
+           }}       
+
+             steps {
+                echo 'Deploy Jump Server'
+                sh "./jumpserver/create.sh Able-jumpserv jumpserver/able-jump.yml jumpserver/able-jump-param.json"
+                sh "sleep 240"
+                echo 'Deployment of jump server complete'
+            }
+        }
     }
 }
