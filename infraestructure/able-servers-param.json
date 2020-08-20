@@ -2,5 +2,9 @@
     {
         "ParameterKey": "EnvironmentName",
         "ParameterValue": "Able-Project"
+    },
+    {
+        "ParameterKey": "KeyName",
+        "ParameterValue": "jb_aws_keypair"
     }
 ]

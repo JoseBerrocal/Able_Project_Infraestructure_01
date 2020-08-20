@@ -8,6 +8,10 @@ Parameters:
         Description: An environment name that will be prefixed to resource names
         Type: String
 
+    KeyName:
+        Description: The EC2 Key Pair to allow SSH access to the instances
+        Type: AWS::EC2::KeyPair::KeyName
+        
 Resources:
 
   LBSecGroup:
@@ -85,6 +89,7 @@ Resources:
           VolumeSize: '10'
       IamInstanceProfile:
         Ref: "RootInstanceProfile"
+      KeyName: !Ref KeyName
 
   WebAppGroup:
     Type: AWS::AutoScaling::AutoScalingGroup
